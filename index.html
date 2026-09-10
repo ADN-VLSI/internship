@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intern - RTL Design &amp; Verification Engineering | ADN Semiconductors</title>
+  <meta name="description" content="Apply for the ADN Semiconductors internship in RTL design and verification engineering in Mohakhali, Dhaka.">
+  <meta property="og:title" content="Intern - RTL Design &amp; Verification Engineering">
+  <meta property="og:description" content="Join ADN Semiconductors for hands-on ASIC, SoC and FPGA project experience.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000103">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+  <style>
+    .hero-deadline {
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-top: 0;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    .hero {
+      align-items: flex-start;
+    }
+
+    .hero-image {
+      background-image: url("hero.png");
+    }
+
+    .hero-content {
+      padding-top: 2.5rem;
+    }
+
+    .hero-content h1 {
+      margin-top: 5rem;
+    }
+
+    .syllabus-section .section-heading .lead {
+      max-width: 560px;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    .syllabus-list {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .syllabus-list .info-card {
+      min-height: 220px;
+    }
+
+    .syllabus-list .info-card > strong {
+      display: block;
+      margin-bottom: 1rem;
+      font: 600 1.05rem "Rajdhani", sans-serif;
+      color: var(--text);
+      text-transform: uppercase;
+    }
+
+    .process-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .process-card {
+      min-height: 390px;
+      padding: 1.7rem 1.45rem 1.35rem;
+      border: 1px solid var(--line);
+      border-top: 2px solid var(--brand);
+      background: rgba(7, 11, 18, .84);
+    }
+
+    .process-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.2rem;
+      color: var(--brand);
+      font: 600 .74rem/1.2 "Rajdhani", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .process-card-date {
+      max-width: 9rem;
+      text-align: right;
+    }
+
+    .process-card h3 {
+      margin: 0 0 1.05rem;
+      font: 700 1.25rem/1.15 "Rajdhani", sans-serif;
+      text-transform: uppercase;
+    }
+
+    .process-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .94rem;
+      line-height: 1.6;
+    }
+
+    .process-card-detail {
+      margin-top: 1.3rem !important;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .process-card-detail strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 980px) {
+      .process-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .process-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .process-card {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .syllabus-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero-deadline .countdown {
+      justify-content: center;
+    }
+
+    .contact-section {
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .contact-link {
+      display: block;
+      padding: 1.35rem;
+      border: 1px solid var(--line);
+      color: var(--text);
+      text-decoration: none;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .contact-link:hover {
+      border-color: var(--brand);
+      transform: translateY(-3px);
+    }
+
+    .contact-link strong {
+      display: block;
+      margin-bottom: .35rem;
+      color: var(--brand);
+      font: 600 .78rem "Rajdhani", sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .contact-link span {
+      color: var(--muted);
+      font-size: .95rem;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 760px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 980px) {
+      .header-inner {
+        position: relative;
+      }
+
+      .menu-toggle {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        display: block;
+        width: 17px;
+        height: 1px;
+        background: var(--brand);
+      }
+
+      .menu-toggle b {
+        margin-left: 5px;
+        font: 500 .7rem "IBM Plex Sans";
+      }
+
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        right: 0;
+        padding: 1rem 2.5vw 1.3rem;
+        background: rgba(2, 4, 8, .98);
+        border-bottom: 1px solid var(--brand);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .site-nav.open {
+        display: flex;
+      }
+
+      .site-nav a {
+        padding: .75rem 0;
+      }
+
+      .nav-apply {
+        text-align: center;
+        margin-top: .5rem;
+      }
+    }
+  </style>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ADN Semiconductors home"><span class="brand-mark">ADN</span><span class="brand-name">SEMICONDUCTORS</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>Menu</b></button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#process">Process</a><a href="#syllabus">Syllabus</a><a href="#qualifications">Qualifications</a><a href="#benefits">What you get</a><a href="#contact">Contact</a>
+        <a class="nav-apply" href="https://lnkd.in/gker-v62" target="_blank" rel="noopener noreferrer">Apply now <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Close-up view of a semiconductor wafer and microchip circuitry"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <div class="hero-deadline">
+          <h2 id="deadline-title">Registration closes <time datetime="2026-09-10T23:59:59+06:00">10 September 2026</time></h2>
+          <div id="countdown" class="countdown" data-deadline="2026-09-10T23:59:59+06:00" aria-live="polite">
+            <div class="time-unit"><strong data-unit="days">--</strong><span>Days</span></div><i>:</i><div class="time-unit"><strong data-unit="hours">--</strong><span>Hours</span></div><i>:</i><div class="time-unit"><strong data-unit="minutes">--</strong><span>Minutes</span></div><i>:</i><div class="time-unit"><strong data-unit="seconds">--</strong><span>Seconds</span></div>
+          </div>
+        </div>
+        <h1 id="hero-title">Intern - RTL Design<br>&amp; Verification Engineering</h1>
+        <div class="hero-meta"><span>Dhaka, on-site</span><span>Mohakhali, Dhaka</span><span>ADN Group</span></div>
+        <p class="hero-summary">Build the logic behind tomorrow's silicon. Work on real ASIC, SoC and FPGA projects with experienced semiconductor engineers.</p>
+        <a class="button button-primary" href="https://lnkd.in/gker-v62" target="_blank" rel="noopener noreferrer">Apply now <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading reveal"><h2 id="process-title">Know what comes next</h2></div>
+        <div class="process-plot reveal" role="img" aria-label="Selection process: application, online MCQ screening, on-site written exam, optional free training, technical interview, then managerial viva.">
+          <svg viewBox="0 0 900 300" aria-hidden="true" focusable="false">
+            <g class="plot-lines plot-lines-past">
+              <path d="M95 170 H225" />
+              <path d="M245 170 H375" />
+            </g>
+            <g class="plot-lines plot-lines-future">
+              <path d="M395 170 H575" />
+              <path d="M385 160 V105 Q385 75 415 75 H475" />
+              <path d="M495 75 H560 Q585 75 585 100 V160" />
+              <path d="M595 170 H775" />
+            </g>
+            <g class="plot-node plot-node-current">
+              <circle cx="85" cy="170" r="10" />
+              <text x="85" y="227"><tspan x="85">APPLICATION</tspan></text>
+            </g>
+            <g class="plot-node plot-node-future">
+              <circle cx="235" cy="170" r="10" />
+              <text x="235" y="227"><tspan x="235">ONLINE MCQ</tspan><tspan x="235" dy="15">SCREENING</tspan></text>
+            </g>
+            <g class="plot-node plot-node-future">
+              <circle cx="385" cy="170" r="10" />
+              <text x="385" y="227"><tspan x="385">ON-SITE WRITTEN</tspan><tspan x="385" dy="15">EXAM</tspan></text>
+            </g>
+            <g class="plot-node plot-node-future plot-node-training">
+              <circle cx="485" cy="75" r="10" />
+              <text x="485" y="25"><tspan x="485">OPTIONAL FREE</tspan><tspan x="485" dy="15">TRAINING</tspan></text>
+            </g>
+            <g class="plot-node plot-node-future">
+              <circle cx="585" cy="170" r="10" />
+              <text x="585" y="227"><tspan x="585">TECHNICAL</tspan><tspan x="585" dy="15">INTERVIEW</tspan></text>
+            </g>
+            <g class="plot-node plot-node-future">
+              <circle cx="785" cy="170" r="10" />
+              <text x="785" y="227"><tspan x="785">MANAGERIAL</tspan><tspan x="785" dy="15">VIVA</tspan></text>
+            </g>
+          </svg>
+        </div>
+        <div class="process-cards">
+          <article class="process-card reveal">
+            <div class="process-card-top"><span>01</span><span class="process-card-date">15 September</span></div>
+            <h3>Online entrance MCQ exam</h3>
+            <p>This is the initial online screening. Only candidates who qualify will move forward to the on-site written exam. Check your internet connection, join from a quiet place, and read each question carefully before selecting an answer.</p>
+            <p class="process-card-detail"><strong>Prepare for:</strong> digital logic, computer architecture, number systems, and introductory Verilog/SystemVerilog.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-card-top"><span>02</span><span class="process-card-date">20-22 September</span></div>
+            <h3>On-site written exam</h3>
+            <p>Only candidates who qualify in the online screening will be invited to an assigned written-exam day between 20 and 22 September. Show your working clearly; the reasoning behind an answer matters, not only the final result.</p>
+            <p class="process-card-detail"><strong>Next step:</strong> candidates who qualify may choose the optional free training or move directly to the technical interview.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-card-top"><span>03</span><span class="process-card-date">23, 24 &amp; 27 September</span></div>
+            <h3>Optional free training</h3>
+            <p>Written-exam qualifiers may attend the free training on 23, 24, and 27 September. This is an additional bonus for candidates who attend; it is not an alternative to the technical interview.</p>
+            <p class="process-card-detail"><strong>Important:</strong> candidates who attend the training still continue to the technical interview.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-card-top"><span>04</span><span class="process-card-date">27-30 September</span></div>
+            <h3>Technical interview</h3>
+            <p>All candidates who continue from the written exam, including those who attend the free training, must complete the technical interview between 27 and 30 September.</p>
+            <p class="process-card-detail"><strong>After this:</strong> selected candidates will attend the managerial viva to discuss their fundamentals, projects, and interest in RTL design and verification.</p>
+          </article>
+          <article class="process-card reveal">
+            <div class="process-card-top"><span>05</span><span class="process-card-date">Final stage</span></div>
+            <h3>Managerial viva</h3>
+            <p>After the technical interview, selected candidates will attend the managerial viva with the team.</p>
+            <p class="process-card-detail"><strong>Be ready to discuss:</strong> your fundamentals, projects, problem-solving approach, and interest in RTL design and verification.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="syllabus" class="section syllabus-section" aria-labelledby="syllabus-title">
+      <div class="container"><div class="section-heading reveal"><h2 id="syllabus-title">What to study</h2><p class="lead">The overall exam checks whether you can understand a digital system, describe its behavior, and debug it methodically.</p></div><div class="syllabus-list"><article class="info-card reveal"><strong>Digital logic</strong><p>Boolean algebra, logic gates, combinational and sequential circuits, truth tables, timing diagrams, registers, counters, and finite state machines.</p></article><article class="info-card reveal"><strong>Computer architecture</strong><p>Binary and hexadecimal numbers, datapaths, simple ALUs, memory concepts, and the role of registers and control logic.</p></article><article class="info-card reveal"><strong>Verilog/SystemVerilog</strong><p>Modules, ports, data types, continuous and procedural assignments, clocked logic, basic testbenches, and synthesizable coding habits.</p></article><article class="info-card reveal"><strong>Verification and tools</strong><p>Simulation flow, waveform-driven debugging, assertions, coverage concepts, introductory UVM, Linux commands, scripting, and version control basics.</p></article></div></div>
+    </section>
+
+    <section id="qualifications" class="section qualifications" aria-labelledby="qualifications-title">
+      <div class="container"><div class="section-heading reveal"><h2 id="qualifications-title">What you bring</h2><p>Strong fundamentals matter. Curiosity takes you further.</p></div><div class="qualification-grid">
+        <article class="qualification-group reveal"><div class="group-label">Required qualifications <span>R-01</span></div><ul><li>Final-year student or recent graduate in EEE, CSE, or a closely related discipline.</li><li><strong>Basic Digital Logic:</strong> Boolean algebra, combinational and sequential logic, truth tables, and timing diagrams.</li><li><strong>Fundamentals of Computer Architecture:</strong> Registers, counters, simple ALUs, and datapath concepts.</li><li><strong>Introductory Verilog/SystemVerilog:</strong> Syntax, modules, ports, data types, and basic testbench structures.</li><li>Foundational knowledge of digital logic design and Verilog/SystemVerilog coding.</li><li>Basic familiarity with simulation tools and waveform-driven debugging.</li><li>Willingness to learn quickly, ask questions, and work in a collaborative engineering environment.</li></ul></article>
+        <article class="qualification-group preferred reveal"><div class="group-label">Preferred qualifications <span>P-01</span></div><ul><li>Academic or personal projects involving RTL design, FPGA labs, or hardware verification.</li><li><strong>Simulation Basics:</strong> Running simulations, reading waveform logs, and identifying basic signal issues.</li><li><strong>Linux Command-Line Fundamentals:</strong> File navigation, basic commands, and text processing.</li><li><strong>Mathematics for Digital Design:</strong> Binary/hexadecimal number systems, basic Boolean algebra, and finite state machine concepts.</li><li>Introductory understanding of UVM, assertions, or scripting for test automation.</li><li>Comfort with Linux command-line workflows and version control basics.</li></ul></article>
+      </div></div>
+    </section>
+
+    <section id="benefits" class="section benefits" aria-labelledby="benefits-title"><div class="container"><div class="section-heading reveal"><h2 id="benefits-title">What you get</h2></div><div class="benefit-grid"><article class="info-card reveal"><span class="card-index">01</span><h3>Paid internship</h3><p>Bring your skills to a working engineering team.</p></article><article class="info-card reveal"><span class="card-index">02</span><h3>Fully subsidized lunch</h3><p>A practical benefit for your on-site workday.</p></article><article class="info-card reveal"><span class="card-index">03</span><h3>Production-grade<br>silicon exposure</h3><p>See how design decisions move toward silicon.</p></article><article class="info-card reveal"><span class="card-index">04</span><h3>Mentorship &amp; future<br>placement opportunity</h3><p>Learn with guidance from experienced engineers.</p></article></div></div></section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div class="container"><div class="section-heading reveal"><h2 id="contact-title">Contact the team</h2><p>Questions about the exam or application? Reach us directly.</p></div><div class="contact-grid"><a class="contact-link reveal" href="mailto:info@adnsemicon.com"><strong>Email</strong><span>info@adnsemicon.com</span></a><a class="contact-link reveal" href="tel:+88009610961963"><strong>Phone</strong><span>+880 09610-961963</span></a><a class="contact-link reveal" href="https://wa.me/8801329665865" target="_blank" rel="noopener noreferrer"><strong>WhatsApp</strong><span>Message us on WhatsApp ↗</span></a></div></div></section>
+
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="brand" href="#top"><span class="brand-mark">ADN</span><span class="brand-name">SEMICONDUCTORS</span></a><p>ADN Semiconductors, ADN Group</p></div><p class="copyright">© 2026 ADN Semiconductors</p></div></footer>
+</body>
+</html>
