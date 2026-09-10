@@ -12,6 +12,7 @@
 #process .process-plot svg{display:block;width:100%;height:auto;overflow:visible}
 #process .plot-lines path{fill:none;stroke-width:2.5;stroke-dasharray:5 6;stroke-linecap:round;stroke-linejoin:round}
 #process .plot-lines-past path,#process .plot-lines-future path{stroke:var(--brand)}
+#process .plot-lines-muted path{stroke:var(--muted)}
 #process .plot-node circle{fill:var(--bg);stroke-width:2.5}
 #process .plot-node text{font:500 12px/1 "IBM Plex Sans",sans-serif;letter-spacing:0;text-anchor:middle;fill:var(--text)}
 #process .plot-node-past circle{stroke:var(--brand)}
@@ -20,6 +21,8 @@
 #process .plot-node-current text{fill:var(--text)}
 #process .plot-node-future circle{stroke:var(--brand);filter:drop-shadow(0 0 4px rgba(141,255,47,.2))}
 #process .plot-node-future text{fill:var(--text)}
+#process .plot-node-muted circle{stroke:var(--muted);filter:none}
+#process .plot-node-muted text{fill:var(--muted)}
 #process .process-map{display:none}
 #process .process-map{grid-template-columns:minmax(115px,1fr) 3.5rem minmax(115px,1fr) 3.5rem minmax(115px,1fr) 2.25rem minmax(190px,1.3fr) 3.5rem minmax(130px,.9fr);min-height:275px;padding:2.4rem 0 3.2rem}
 #process .process-node{display:block;text-align:center}
@@ -56,3 +59,6 @@
 	#process .process-plot .plot-node text{transform:translateY(14px) rotate(-90deg);transform-box:fill-box;transform-origin:center}
 	#process .process-plot .plot-node-training text{transform:translateY(78px) rotate(-90deg)}
 }
+
+/* Keep content visible if deferred reveal initialization is unavailable. */
+.reveal{opacity:1;transform:none}
