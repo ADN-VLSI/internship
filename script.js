@@ -1,15 +1,28 @@
 (function () {
   const countdown = document.querySelector('#countdown');
   if (countdown) {
+    const start = new Date(countdown.dataset.start).getTime();
     const deadline = new Date(countdown.dataset.deadline).getTime();
+    const examLink = document.querySelector('#exam-link');
+    const deadlineTitle = document.querySelector('#deadline-title');
     const units = ['days', 'hours', 'minutes', 'seconds'];
 
     function updateCountdown() {
-      const remaining = deadline - Date.now();
-      if (remaining <= 0) {
-        countdown.innerHTML = '<p class="closed-state">Exam window open</p>';
+      const now = Date.now();
+      if (now >= deadline) {
+        countdown.innerHTML = '<p class="closed-state">Exam window closed</p>';
         countdown.classList.add('closed');
+        if (examLink) examLink.hidden = true;
+        if (deadlineTitle) deadlineTitle.textContent = 'Online MCQ exam ended at 11:59 AM';
         return;
+      }
+      const examOpen = countdown.dataset.examOpen === 'true' || now >= start;
+      const remaining = (examOpen ? deadline : start) - now;
+      if (examLink) examLink.hidden = !examOpen;
+      if (deadlineTitle) {
+        deadlineTitle.textContent = examOpen
+          ? 'Online MCQ exam is open until 11:59 AM'
+          : 'Online MCQ exam starts at 11:00 AM';
       }
       const values = [
         Math.floor(remaining / 86400000),

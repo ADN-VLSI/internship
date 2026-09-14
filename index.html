@@ -142,6 +142,14 @@
       justify-content: center;
     }
 
+    .exam-link {
+      margin-top: 1rem;
+    }
+
+    .exam-link[hidden] {
+      display: none;
+    }
+
     .contact-section {
       background: var(--surface);
       border-top: 1px solid var(--line);
@@ -263,10 +271,11 @@
       <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
         <div class="hero-deadline">
-          <h2 id="deadline-title">Online screening begins <time datetime="2026-09-15T11:00:00+06:00">15 September 2026</time></h2>
-          <div id="countdown" class="countdown" data-deadline="2026-09-15T11:00:00+06:00" aria-live="polite">
+          <h2 id="deadline-title">Online MCQ exam is open until 11:59 AM</h2>
+          <div id="countdown" class="countdown" data-start="2026-09-15T11:00:00+06:00" data-deadline="2026-09-15T11:59:00+06:00" data-exam-open="true" aria-live="polite">
             <div class="time-unit"><strong data-unit="days">--</strong><span>Days</span></div><i>:</i><div class="time-unit"><strong data-unit="hours">--</strong><span>Hours</span></div><i>:</i><div class="time-unit"><strong data-unit="minutes">--</strong><span>Minutes</span></div><i>:</i><div class="time-unit"><strong data-unit="seconds">--</strong><span>Seconds</span></div>
           </div>
+          <a id="exam-link" class="button button-primary exam-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeZ64-q1ovTIequnpMoiFMvQ15_gUytSsJElMCiE8dsqF01og/viewform?usp=header" target="_blank" rel="noopener noreferrer">Start online MCQ exam <span aria-hidden="true">↗</span></a>
         </div>
         <h1 id="hero-title">Intern - RTL Design<br>&amp; Verification Engineering</h1>
         <div class="hero-meta"><span>Dhaka, on-site</span><span>Mohakhali, Dhaka</span><span>ADN Group</span></div>
