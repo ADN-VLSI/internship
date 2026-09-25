@@ -1035,12 +1035,46 @@ em {
 #process .plot-node-current text {
   fill: var(--text);
 }
-#process .plot-node-future circle {
+#process .plot-node-training circle {
+  fill: rgba(149, 167, 193, 0.12);
+  stroke: var(--muted);
+  filter: none;
+}
+#process .plot-node-training text {
+  fill: var(--muted);
+}
+#process .plot-lines-future path:first-of-type {
+  stroke: var(--muted);
+}
+#process .plot-lines-future path:last-of-type {
   stroke: var(--brand);
-  filter: drop-shadow(0 0 4px rgba(141, 255, 47, 0.2));
+}
+#process .plot-node-future circle {
+  fill: rgba(141, 255, 47, 0.12);
+  stroke: var(--brand);
+  filter: drop-shadow(0 0 10px rgba(141, 255, 47, 0.55));
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: technical-beat 1.4s ease-in-out infinite;
 }
 #process .plot-node-future text {
   fill: var(--text);
+}
+
+@keyframes technical-beat {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(141, 255, 47, 0.45));
+  }
+  35% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 16px rgba(141, 255, 47, 0.9));
+  }
+  65% {
+    transform: scale(0.98);
+    filter: drop-shadow(0 0 12px rgba(141, 255, 47, 0.7));
+  }
 }
 #process .plot-node-muted circle {
   stroke: var(--muted);
