@@ -187,6 +187,93 @@
       display: none;
     }
 
+    .schedule-section {
+      background: rgba(8, 12, 18, .88);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .schedule-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      background: rgba(10, 15, 22, .85);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.02);
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(170px, 1fr));
+      gap: .9rem;
+      padding: 1rem;
+    }
+
+    .calendar-day {
+      min-height: 220px;
+      border: 1px solid var(--line);
+      background: rgba(9, 14, 22, .9);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calendar-day-header {
+      padding: .9rem .85rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(141, 255, 47, .08);
+      color: var(--brand);
+      font: 700 .9rem "Rajdhani", sans-serif;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .slot-list {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      padding: .8rem;
+      flex: 1;
+    }
+
+    .slot-item {
+      padding: .7rem .7rem .65rem;
+      border: 1px solid rgba(141, 255, 47, .2);
+      background: rgba(141, 255, 47, .03);
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.5;
+    }
+
+    .slot-time {
+      display: block;
+      margin-bottom: .15rem;
+      color: var(--brand);
+      font: 700 .8rem "Rajdhani", sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .slot-university {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    @media (max-width: 1120px) {
+      .calendar-grid {
+        grid-template-columns: repeat(4, minmax(170px, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .calendar-grid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+      }
+    }
+
+    @media (max-width: 500px) {
+      .calendar-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .contact-section {
       background: var(--surface);
       border-top: 1px solid var(--line);
@@ -296,7 +383,7 @@
       <a class="brand" href="#top" aria-label="ADN Semiconductors home"><span class="brand-mark">ADN</span><span class="brand-name">SEMICONDUCTORS</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>Menu</b></button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#process">Process</a><a href="#qualifications">Qualifications</a><a href="#benefits">What you get</a><a href="#contact">Contact</a>
+        <a href="#process">Process</a><a href="#schedule">Schedule</a><a href="#benefits">What you get</a><a href="#contact">Contact</a>
         <a class="nav-apply" href="#syllabus">Syllabus</a>
       </nav>
     </div>
@@ -310,7 +397,7 @@
         <h1 id="hero-title">Intern - RTL Design<br>&amp; Verification Engineering</h1>
         <div class="hero-exam-focus" role="note" aria-label="Candidate contact update">
           <strong>Prepare for your technical interview.</strong>
-          <span>Exact interview schedules will be rolled out soon.</span>
+          <span>Exact interview schedules sent to your email.</span>
           <p>Review your digital design, RTL, verification, and debugging fundamentals. Keep an eye on your email for your interview schedule.</p>
         </div>
         <div class="hero-meta"><span>Dhaka, on-site</span><span>Mohakhali, Dhaka</span><span>ADN Group</span></div>
@@ -379,10 +466,10 @@
             <p class="process-card-detail"><strong>Important:</strong> candidates who attend the training still continue to the technical interview.</p>
           </article>
           <article class="process-card reveal">
-            <div class="process-card-top"><span>04</span><span class="process-card-date">Schedule soon</span></div>
+            <div class="process-card-top"><span>04</span><span class="process-card-date">Live schedule</span></div>
             <h3>Technical interview</h3>
-            <p>Prepare to discuss your digital design and verification fundamentals, projects, and approach to debugging. Exact interview schedules will be rolled out soon.</p>
-            <p class="process-card-detail"><strong>Watch your inbox:</strong> selected candidates will receive their interview schedule before the next stage.</p>
+            <p>Confirmed interview timing slots are now available. Review your date and time carefully, and arrive 15 minutes early for the technical interview.</p>
+            <p class="process-card-detail"><strong>Check the list:</strong> shortlisted candidates can match their email and university with the published schedule below.</p>
           </article>
           <article class="process-card reveal">
             <div class="process-card-top"><span>05</span><span class="process-card-date">Final stage</span></div>
@@ -406,6 +493,111 @@
     </section>
 
     <section id="benefits" class="section benefits" aria-labelledby="benefits-title"><div class="container"><div class="section-heading reveal"><h2 id="benefits-title">What you get</h2></div><div class="benefit-grid"><article class="info-card reveal"><span class="card-index">01</span><h3>Paid internship</h3><p>Bring your skills to a working engineering team.</p></article><article class="info-card reveal"><span class="card-index">02</span><h3>Fully subsidized lunch</h3><p>A practical benefit for your on-site workday.</p></article><article class="info-card reveal"><span class="card-index">03</span><h3>Production-grade<br>silicon exposure</h3><p>See how design decisions move toward silicon.</p></article><article class="info-card reveal"><span class="card-index">04</span><h3>Mentorship &amp; future<br>placement opportunity</h3><p>Learn with guidance from experienced engineers.</p></article></div></div></section>
+
+    <section id="schedule" class="section schedule-section" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2 id="schedule-title">Interview schedule</h2>
+          <p>Confirmed technical interview timings are listed by date. Check your day and time carefully.</p>
+        </div>
+        <div class="schedule-wrap reveal">
+          <div class="calendar-grid" aria-label="Interview schedule calendar">
+            <article class="calendar-day">
+              <div class="calendar-day-header">Sun Sep 27</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">SUST</span><br>sa***42@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">UIU</span><br>ma***cs@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">AUST</span><br>na***05@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">RUET</span><br>tj***oy@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Mon Sep 28</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">SUST</span><br>an***99@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">BEC</span><br>za***dr@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">AUST</span><br>ra***27@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">CUET</span><br>sa***e2@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Tue Sep 29</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">IUT</span><br>sa***la@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">AIUB</span><br>in***99@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">AUST</span><br>na***an@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">IUT</span><br>ma***ik@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Wed Sep 30</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">CUET</span><br>ch***15@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">AUST</span><br>an***92@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">SUST</span><br>md***re@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">AUST</span><br>ad***58@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Thu Oct 1</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">11:00</span><span class="slot-university">AUST</span><br>na***ed@...</div>
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">BRAC</span><br>mu***ed@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">IUT</span><br>ta***ue@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">RUET</span><br>ta***28@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">AUST</span><br>sh***bo@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Sun Oct 4</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">AUST</span><br>sa***42@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">NSU</span><br>da***82@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">KUET</span><br>ma***40@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">BRAC</span><br>sh***ee@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Mon Oct 5</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">AIUB</span><br>is***hc@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">BUET</span><br>ab***07@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">IIT</span><br>md***25@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">MIST</span><br>an***a5@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Tue Oct 6</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">UIU</span><br>sa***34@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">CUET</span><br>al***in@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">KUET</span><br>mo***94@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">DUET</span><br>sa***21@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Wed Oct 7</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">BRAC</span><br>sk***od@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">BEC</span><br>ka***il@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">BUET</span><br>an***01@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">IUT</span><br>sh***ng@...</div>
+              </div>
+            </article>
+            <article class="calendar-day">
+              <div class="calendar-day-header">Thu Oct 8</div>
+              <div class="slot-list">
+                <div class="slot-item"><span class="slot-time">11:00</span><span class="slot-university">EWU</span><br>af***ah@...</div>
+                <div class="slot-item"><span class="slot-time">12:00</span><span class="slot-university">KUET</span><br>sh***09@...</div>
+                <div class="slot-item"><span class="slot-time">2:30</span><span class="slot-university">AUST</span><br>di***a6@...</div>
+                <div class="slot-item"><span class="slot-time">3:30</span><span class="slot-university">KUET</span><br>fa***66@...</div>
+                <div class="slot-item"><span class="slot-time">4:30</span><span class="slot-university">BRAC</span><br>aa***an@...</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div class="container"><div class="section-heading reveal"><h2 id="contact-title">Contact the team</h2><p>Questions about the exam or application? Reach us directly.</p></div><div class="contact-grid"><a class="contact-link reveal" href="mailto:info@adnsemicon.com"><strong>Email</strong><span>info@adnsemicon.com</span></a><a class="contact-link reveal" href="tel:+88009610961963"><strong>Phone</strong><span>+880 09610-961963</span></a><a class="contact-link reveal" href="https://wa.me/8801329665865" target="_blank" rel="noopener noreferrer"><strong>WhatsApp</strong><span>Message us on WhatsApp ↗</span></a></div></div></section>
 
